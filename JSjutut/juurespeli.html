@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="juurespeli.css" rel="stylesheet">
+  <link rel="icon" href="../media/js/juurespeli.jpg" type="image/icon type">
+  <title>Juurespeli</title>
+</head>
+<center>
+    <a href="../index.html">
+      <button type="button">Takaisin pääsivulle</button>
+    </a>
+      <h1>Juurespeli</h1>
+    </center>
+<div class="row no-gutters">
+    <div class="col no-gutters">
+        <div class="left">
+        <h2>Rahaa: <span id="rahaMaara">50</span>€</h2>
+        <h2>Panos: <span id="panosMaara">1</span>€</h2>
+            <button onclick="asetaPanos(1)"><img src="juurespeliKuvat/1euro.png"><h1>1€</h1></button>
+            <button onclick="asetaPanos(2)"><img src="juurespeliKuvat/2euro.png"><h1>2€</h1></button>
+            <button onclick="asetaPanos(3)"><img src="juurespeliKuvat/3euro.png"><h1>3€</h1></button>
+        &nbsp
+            <img src="juurespeliKuvat/pelaaNappi.png" id="pelaaNappi" onclick="pelaa(), peliAani();">
+            <img src="juurespeliKuvat/otavelkaa.png" id="velkaNappi" onclick="velanOtto();">
+        <br><br>
+            <img id="slot1" src="porkkana.png" height="200" width="200">
+            <img id="slot2" src="nauris.png" height="200" width="200">
+            <img id="slot3" src="punajuuri.png" height="200" width="200">
+            <img id="slot4" src="lanttu.png"  height="200" width="200">
+        <br><br>
+            <input type="image" id="lukitus1" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(1), lukitusAani()">
+            <input type="image" id="lukitus2" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(2), lukitusAani()">
+            <input type="image" id="lukitus3" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(3), lukitusAani()">
+            <input type="image" id="lukitus4" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(4), lukitusAani()">
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col no-gutters">
+            <div class="right">
+                <img id="voittotaulukko" src="juurespeliKuvat/taulukko1.png" height="400" width="900">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="juurespeli.js"></script>
+
+</html>

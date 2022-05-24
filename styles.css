@@ -1,0 +1,108 @@
+div.child {
+    display: inline-block;
+}
+div.osio {
+        width: auto;
+        border: solid cyan;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 5px;
+        margin: 0px 0px 0px;
+        padding: 5px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    div.tyohistoria {
+        width: auto;
+        height: auto;
+        border: solid cyan;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 5px;
+        margin: 0px 0px 0px;
+        padding: 5px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    div.harrastukseni {
+        width: auto;
+        border: solid cyan;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 5px;
+        margin: 0px 0px 0px;
+        padding: 5px;
+        position: relative;
+        background-image: url("media/peugeot.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    div.kukaolen {
+        width: auto;
+        border: solid cyan;
+        border-radius: 25px;
+        border-style: double;
+        border-width: 5px;
+        margin: 0px 0px 0px;
+        padding: 5px;
+        position: relative;
+        background-image: url("media/sunset.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+    }
+    div.video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 100%;
+    }
+    ul {
+        text-align: center;
+    }
+    li {
+        text-align: center;
+    }
+    body {
+        background-image: url("media/tausta.png");
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+    }
+    p { 
+        font-family: 'Lucida Console', monospace;
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+    }
+    h2 {
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+    }
+    h3 {
+            font-family: Helvetica, sans-serif;
+            text-align: center;
+            color: black;
+    }
+    h7 {
+        font-family: Courier New, sans-serif;
+    }
+    a:link {
+        color:lightblue;
+    }
+    a:visited {
+        color: rgb(205, 0, 255);
+    }
+    select {
+        text-align: center;
+    }

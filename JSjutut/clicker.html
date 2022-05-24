@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" href="../media/keksi.png" type="image/icon type">
+  <title>Cookie Clicker</title>
+</head>
+<body>
+    <style>
+      body {
+        background-color: rgba(255,77,0,0.5);
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+    }
+
+    </style>
+    <center>
+    <a href="../index.html">
+      <button type="button">Takaisin pääsivulle</button>
+  </a>
+  <button id="reset" onclick="reset()">Resetoi</button>
+
+      <h1>Cookie Clicker</h1>
+      <h2>Keksien määrä: <span id="maara">0</span></h2>
+      <h2>Keksejä sekunnissa: <span id="CpS">0</span></h2>
+
+      <div class="row no-gutters">
+        <div class="col no-gutters">
+          <div class="left">
+            <img src="../media/keksi.png" id="kuva" onclick="peli(), bongo()">
+          </div>
+        </div>
+        <div class="col no-gutters">
+          <div class="right">
+            <h2>Minimipalkkalainen (<span id="apuriCost">10</span>)</h2>
+            <img src="../media/kasi.png" width="100" height="100" onclick="ostaApuri()">
+            <h2>Omistat: <span id="apuriMaara">0</span></h2>
+            <h2>CpS: 1</h2>
+            <br>
+            <h2>Henri (<span id="henriCost">20</span>)</h2>
+            <img src="../media/henript1.png" width="100" height="100" onclick="ostaHenri()">
+            <h2>Omistat: <span id="henriMaara">0</span></h2>
+            <h2>CpS: 2.5</h2>
+            <br>
+            <h2>Pösö (<span id="posoCost">40</span>)</h2>
+            <img src="../media/peugeot.jpg" width="100" height="100" onclick="ostaPoso()">
+            <h2>Omistat: <span id="posoMaara">0</span></h2>
+            <h2>CpS: 5</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+      
+  
+    </center>
+  <script src="clicker.js"></script>
+</body>
+</html>
