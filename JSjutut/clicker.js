@@ -16,8 +16,7 @@ function peli() {
     maara.innerHTML = klikkaukset;
 }
 function reset() {
-    klikkaukset = 0;
-    maara.innerHTML = klikkaukset;
+    location.reload();
 }
 function bongo() {
     var audio = new Audio("../media/bongo.wav");
