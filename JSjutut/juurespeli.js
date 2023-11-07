@@ -88,19 +88,19 @@ function vaihdaKuva(slot) {
   console.log(randInt);
   switch(randInt) {
     case 1 :
-        image = "porkkana.png";
+        image = "juurespeliKuvat/porkkana.png";
         break;
     case 2 :
-        image = "lanttu.png";
+        image = "juurespeliKuvat/lanttu.png";
         break;
     case 3:
-        image = "nauris.png";
+        image = "juurespeliKuvat/nauris.png";
         break;
     case 4:
-        image = "punajuuri.png";
+        image = "juurespeliKuvat/punajuuri.png";
         break;
     case 5:
-        image = "seiska.png";
+        image = "juurespeliKuvat/seiska.png";
         break;
       }
   document.getElementById(slot).src = image;
@@ -174,7 +174,7 @@ function tarkista_voitto() {
     if (kuva1 == kuva2 && kuva2 == kuva3 && kuva3 == kuva4) {
         var kuvaNimi = kuva1.split('/').pop();
           switch  (kuvaNimi) {
-            case "porkkana.png" :
+            case "juurespeliKuvat/porkkana.png" :
                   if (panos==1) {
                     rahaa = rahaa + 2;
                     audio.play();
@@ -188,7 +188,7 @@ function tarkista_voitto() {
                     audio.play();
                   }
               break;
-            case "lanttu.png" :
+            case "juurespeliKuvat/lanttu.png" :
                   if (panos==1) {
                     rahaa = rahaa + 4;
                     audio.play();
@@ -202,7 +202,7 @@ function tarkista_voitto() {
                     audio.play();
                   }
               break;
-            case "nauris.png" :
+            case "juurespeliKuvat/nauris.png" :
                   if (panos==1) {
                     rahaa = rahaa + 6;
                     audio.play();
@@ -216,7 +216,7 @@ function tarkista_voitto() {
                     audio.play();
                   }
               break;
-            case "punajuuri.png" :
+            case "juurespeliKuvat/punajuuri.png" :
                 if (panos==1) {
                   rahaa = rahaa + 8;
                   audio.play();
@@ -230,7 +230,7 @@ function tarkista_voitto() {
                   audio.play();
                 }
               break;
-            case "seiska.png" :
+            case "juurespeliKuvat/seiska.png" :
               if (panos==1) {
                 rahaa = rahaa + 10;
                 audio.play();

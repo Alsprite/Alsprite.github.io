@@ -4,3 +4,10 @@ body {
     background-attachment: fixed;
     color: white;
 }
+button {
+    background-color: gray;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+}

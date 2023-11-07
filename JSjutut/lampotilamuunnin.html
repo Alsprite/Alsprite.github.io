@@ -12,13 +12,21 @@
         ul {
             list-style-type: decimal;
     }
+    button:hover {
+      cursor: pointer;
+    }
     </style>
-    <a href="../index.html">
-      <button type="button">Takaisin pääsivulle</button>
-  </a>
+    
   <div>
+    <center>
+    <a href="../index.html">
+      <button type="button">&#8592&#8592</button>
+  </a>
+  <a href="../sovellukset.html">
+    <button type="button">&#8592</button>
+</a>
       <h1>Lämpötilamuunnin</h1>
-      <center>
+      
       <select name="muunnin" id="select">
       <option value="cTOf" id="cTOf">Celsius - Fahrenheit</option>
       <option value="fTOc" id="fTOc">Fahrenheit - Celsius</option>
@@ -32,7 +40,7 @@
 <p>
   <input id="inputFahrenheit" type="number" placeholder="Muutettava lämpötila" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
 </p>
-<p>Vastaus: <span id="outputFahrenheit"></span></p>
+<p>Tulos: <span id="outputFahrenheit"></span></p>
 
 <script src="lampotilamuunnin.js"></script>
 

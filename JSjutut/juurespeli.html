@@ -10,7 +10,10 @@
 </head>
 <center>
     <a href="../index.html">
-      <button type="button">Takaisin pääsivulle</button>
+        <button type="button" class="button">&#8592&#8592</button>
+    </a>
+    <a href="../pelit.html">
+        <button type="button" class="button">&#8592</button>
     </a>
       <h1>Juurespeli</h1>
     </center>
@@ -19,29 +22,33 @@
         <div class="left">
         <h2>Rahaa: <span id="rahaMaara">50</span>€</h2>
         <h2>Panos: <span id="panosMaara">1</span>€</h2>
-            <button onclick="asetaPanos(1)"><img src="juurespeliKuvat/1euro.png"><h1>1€</h1></button>
-            <button onclick="asetaPanos(2)"><img src="juurespeliKuvat/2euro.png"><h1>2€</h1></button>
-            <button onclick="asetaPanos(3)"><img src="juurespeliKuvat/3euro.png"><h1>3€</h1></button>
+            <button onclick="asetaPanos(1)"><img src="juurespeliKuvat/1euro.png" id="panosKuva"><h1>1€</h1></button>
+            <button onclick="asetaPanos(2)"><img src="juurespeliKuvat/2euro.png" id="panosKuva"><h1>2€</h1></button>
+            <button onclick="asetaPanos(3)"><img src="juurespeliKuvat/3euro.png" id="panosKuva"><h1>3€</h1></button>
         &nbsp
             <img src="juurespeliKuvat/pelaaNappi.png" id="pelaaNappi" onclick="pelaa(), peliAani();">
             <img src="juurespeliKuvat/otavelkaa.png" id="velkaNappi" onclick="velanOtto();">
         <br><br>
-            <img id="slot1" src="porkkana.png" height="200" width="200">
-            <img id="slot2" src="nauris.png" height="200" width="200">
-            <img id="slot3" src="punajuuri.png" height="200" width="200">
-            <img id="slot4" src="lanttu.png"  height="200" width="200">
-        <br><br>
-            <input type="image" id="lukitus1" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(1), lukitusAani()">
-            <input type="image" id="lukitus2" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(2), lukitusAani()">
-            <input type="image" id="lukitus3" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(3), lukitusAani()">
-            <input type="image" id="lukitus4" src="juurespeliKuvat/lukko.png" height="200" width="200" onclick="lukitus(4), lukitusAani()">
+        <div class="slotit" style="display: inline">
+            <img class="kuvat" id="slot1" src="juurespeliKuvat/porkkana.png">
+            <img class="kuvat" id="slot2" src="juurespeliKuvat/nauris.png">
+            <img class="kuvat" id="slot3" src="juurespeliKuvat/punajuuri.png">
+            <img class="kuvat" id="slot4" src="juurespeliKuvat/lanttu.png">
         </div>
-    </div>
-
+        <br><br>
+        <div class="lukot" style="display: inline">
+            <input type="image" class="lukot" id="lukitus1" src="juurespeliKuvat/lukko.png" onclick="lukitus(1), lukitusAani()">
+            <input type="image" class="lukot" id="lukitus2" src="juurespeliKuvat/lukko.png" onclick="lukitus(2), lukitusAani()">
+            <input type="image" class="lukot" id="lukitus3" src="juurespeliKuvat/lukko.png" onclick="lukitus(3), lukitusAani()">
+            <input type="image" class="lukot" id="lukitus4" src="juurespeliKuvat/lukko.png" onclick="lukitus(4), lukitusAani()">
+        </div>
+            
+        </div>
+    </div> 
     <div class="row no-gutters">
         <div class="col no-gutters">
             <div class="right">
-                <img id="voittotaulukko" src="juurespeliKuvat/taulukko1.png" height="400" width="900">
+                <img id="voittotaulukko" src="juurespeliKuvat/taulukko1.png">
             </div>
         </div>
     </div>
